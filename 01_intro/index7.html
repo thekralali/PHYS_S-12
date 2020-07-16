@@ -1,53 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+  
+<!DOCTYPE HTML>
 <head>
-  <title>PHYSCI 70: Intro to Digital Fabrication </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link href="./style.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title> Thekra Alali - Week 2 </title>
 </head>
 <body>
+<center>
+<h1> Week 7: </h1>
+  <h3> Assignment </h3>
+<p>The first part of our assignment today was to use a sensor from the kit to measure a physical quantity with the Arduino. We needed to calibrate our sensor, which meant we had to describe the range between its minimum and maximum values and whether we could control it or not.</p> 
 
-<div class="container-fluid bg-3 text-center">
-  <h3>PHYS S-12: Introduction to Digital Fabrication </h3> 
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href='./01_intro/index.html'>Week 1: Introduction</a></h4>
-    </div>
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href=''>Broken Link</a></h4>
-    </div>
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href=''>Broken Link</a></h4>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href=''>Broken Link</a></h4>
-    </div>
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href=''>Broken Link</a></h4>
-    </div>
-    <div class="col-sm-4">
-      <img src="./01_intro/sew.png" class="img-responsive margin" style="width:100%" alt="Sew">
-      <h4><a href=''>Broken Link</a></h4>
-    </div>
-  </div>
-</div>
-
-  
-  
-  
-</div>
-
-</body>
-</html>
+<p>I wanted to follow Robert's tutorial, but I couldn't find a magnet in our house. So I decided to think and create another circuit with a phototransistor. I used a 1k ohm resistor and an LED light to physically show and demonstrate the effects of the sensor. I replicated it first on Tinkercad and it deemed functional to me. Here's the circuit and its code:</p>
+  <img src="phototransistor.png" alt="fan" style="width:30%"> <br>
+  <img src="phototransistorcode.png" alt="fan" style="width:30%">
+<p>On the lowest setting, it read 0 on the serial monitor. When I set the lighting settings in the middle, it read 346. On the highest setting, it read 359. I was excited to recreate this circuit in order to gather data properly by using my iPhone flash's lumens as the input. However, I faced a few problems with the phototransistor after recreating the circuit. The current and voltage couldn't seem to flow through it, and I'm still not sure why. When I used the voltmeter on my LED light, it read ~0.6. I assume this isn't enough power to light it up. The circuit didn't seem to work at all, but once I opened the serial monitor's tab, it showed me some values. It responded to my iPhone's flash, but there was something obviously wrong. Nonetheless, here's the table I made using the data I collected.</p>
+    <img src="datatables.png" alt="fan" style="width:30%">
