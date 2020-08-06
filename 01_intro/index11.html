@@ -2,14 +2,26 @@
 <head>
 <link rel="stylesheet" href="style.css">
 <html lang="en">
-  <title>Thekra Alali - Week 11  </title>
+  <title>Thekra Alali - Final Project: Lazy Susan  </title>
   </head>
   <body>
 <center>
-  <h1> Week 11: </h>
-  <h3> Assignment </h3>
-  <p>Our assignment is to document our progress with our final project and to start pI spent more time redesigning my project and thinking about it's code. My project isn't too complicated, so it doesn't demand a lot. I plan on building a lazy susan that's divided into parts. The amount of parts will differ on the size of the disc on top. It's supposed to work wirelessly where it turns to a certain section after being stimulated. I visited a lab a few days ago in order to make sure I could build my project in time. Things seemed alright there. I checked out their Prusa slicer and took a quick glimpse at their laser cutting machines before going home. I plan on visiting a few more times very soon!</p> <br>
-  <p>Although I haven't gone far with building the project, I started writing the lazy susan's code using Nathan's <a href="https://nathanmelenbrink.github.io/intro-dig-fab/09_networking/huzzah1b.html">Firebase code</a> as a template. I did some quick modifications to ensure it would work on a stepper motor. The number of steps and the speed of the stepper aren't the final numbers. Those numbers would change, again, depending on the size of the lazy susan's disc. I'll be updating this page constantly with every little change that comes with it. Nonetheless, here's the code:</p>
- <img src="steppermotor.png" class="img-responsive margin" style="width:50%" alt="HTML">
+  <h1> Final Project: Lazy Susan </h1>
+  <h3> Proposal: </h3>
+<p>Proposal: Since this is the first time I've ever worked with circuits and digital fabrication, I couldn't comprehend the scope of this course in the beginning. I wanted to create something flashy and convenient, but after discussing my ideas with my instructors I decided to tone it down and build something simple and covenient. I built a lazy susan that would turn to one of its sections by the press of a button on a website.</p>  
+  <h3>How It Works:</h3>
+  <br>
+  <h3>Circuit:</h3>
+  <p>Before I started designing my parts, I had to build my circuit in order to build upon it and make sure there was enough space for everything. I built a 5V circuit with a 4 wire bipolar stepper motor, powered by a power bank. The stepper motor was connected to a motorboard which was connected to a HUZZAH32 board. The Huzzah board is the reason this project works wirelessly. The motor's pins were connected to pins 27, 33, 15, and 32 on the Huzzah board to serve as outputs. The circuit wasn't too complicated, so it didn't need too much initial planning. I made sure to use the smaller breadboard from our kits so that I wouldn't need to 3D model parts that were too big and would take too much time.</p>
+  <h3>3D Design:</h3>
+  <p>After I built my circuit, I thought about how I should go by designing my project. I wrote down a few rough ideas. I knew needed to 3D model 3 boxes for the stepper motor and the breadboard (the extra box is just to balance out how it looks) and a cone I could attach to the stepper motor. I also designed a wooden disc I planned to attach to said cone. I originally planned to laser cut the middle of the disc from the bottom to fit the stepper motor, but I decided against it because it seemed like I was being too risky. I couldn't think of a Plan B if the hole was too tight or too wide. So I decided to take the safer route and go with the 3D printed cone.</p>
+  <br>
+  <p>I started with designing the stepper motor's box with Fusion360. Using the calipers from our kits, I measured my motor and made a 45x45x26 mm box with two 9.5x35 mm rectanglular openings on two opposide sides of the box. The openings started at the 5.50 mm point from the bottom of the box. I made sure to create these openings so that the motor's wires could be pulled out of the box to reach the breadboard, which would be in a second box. This box took around an hour to be 3D printed.</p>
+  <br>
+  <p>I used a small breadboard from our kit to model the second box. Although I knew how the circuit would look like, I wasn't sure how I'd deal with the wires. So I created a 86x60x46 mm rectangular box with three 9.5x81 mm openings on the two longer sides and a 9.5x35 mm rectangular opening that would match the one from the first box. This side is supposed to be the one facing it. The opposite side would be in the power bank's direction. The wire connecting the Huzzah to the power bank is a little thick, so I faced a small problem with the box I 3D modeled. It was possible to insert the wire, but it took a lot of effort. I tried breaking the piece that blocked the entrance, but accidentally broke two unrelated parts. I had to 3D model a second, thicker version of it without that particular part so I wouldn't have to face that issue again.</p>
+  <br>
+  <p>The last part I had to 3D model was the cone. I started with creating a sketch of a circle. The circle is supposed to be the widest part of the cone. I extruded the sketch and played around with the taper angle to turn it from a cylinder to a cone. Since I wanted it to fit the rod on the stepper motor, I used the calipers (I wouldn't have gone ANYWHERE with this project without my calipers) to try to take the rod's measurements. I created another sketch of a semi-circle to extrude and use as an opening for the stepper motor to fit in. I combined those two sketches and this was the product! Unfortunately, I made the opening a little too tight. I broke it 3 times trying to push it into the stepper motor, but it kind of worked out despite that.</p>
+  
+ 
   </body>
 </html>
